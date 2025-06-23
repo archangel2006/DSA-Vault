@@ -1,3 +1,7 @@
+#Given an array of integers, find the longest subarray where the absolute difference between any two elements is less than or equal to .
+
+
+# Doesn't always work: what if array consists of only 1 element> unique=[single_element]
 def pickingNumbers(a):
     # a.sort()  #changes array , not effecient
     # actually now that I understand the Q, we can use sort!
