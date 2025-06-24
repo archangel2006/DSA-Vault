@@ -1,6 +1,5 @@
 #June18,2025
 
-#User function Template for python3
 
 class Solution:
     def totalFine(self, date, car, fine):
