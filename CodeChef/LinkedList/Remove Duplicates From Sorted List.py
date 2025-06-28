@@ -1,12 +1,9 @@
-# @5June,2025
+# 25June,2025
 
-'''
-# Node Class:
 class Node:
     def init(self,val):
         self.data = val
         self.next = None
-'''
 
 class Solution:
     def removeDuplicates(self, head):
