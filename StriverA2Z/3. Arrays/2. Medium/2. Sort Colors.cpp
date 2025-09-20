@@ -1,0 +1,65 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+
+//Time: 0ms
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+            int cnt0 = 0;
+            int cnt1 = 0;
+            int cnt2 = 0;
+
+            for (int num : nums){
+                if (num == 1){
+                    cnt1++;
+                }else if (num == 2){
+                    cnt2++;
+                }else{
+                    cnt0++;
+                }
+            }
+            
+            int i = 0;
+            while (cnt0>0){
+                nums[i] = 0;
+                i++;
+                cnt0--;
+            }
+            while (cnt1>0){
+                nums[i] = 1;
+                i++;
+                cnt1--;
+            }
+            while (cnt2>0){
+                nums[i] = 2;
+                i++;
+                cnt2--;
+            } 
+    }
+};
+
+
+// DUTCH NATIONAL ALGORITHM
+
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        int low=0, mid=0, high=nums.size()-1;
+
+        while(mid<=high){
+            if (nums[mid] == 0){
+                swap(nums[low], nums[mid]);
+                low++;
+                mid++;
+            }else if (nums[mid] == 1){
+                mid++;
+            }else{
+                swap(nums[mid], nums[high]);
+                high--;
+            }
+        }
+    }
+};
