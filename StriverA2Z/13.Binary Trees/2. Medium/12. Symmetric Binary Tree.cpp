@@ -20,7 +20,6 @@ struct TreeNode {
 // → Worst case (skewed tree): O(N + N + N) = O(N)
 // → Best case (balanced tree): O(N) space dominated by traversal vectors
 
-
 class Solution {
 private:
     vector<string>leftTraversal(TreeNode* root) {
