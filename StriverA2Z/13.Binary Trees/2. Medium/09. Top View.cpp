@@ -2,8 +2,6 @@
 using namespace std;]
 
 
-// 1011 /1111 test cases passed
-
 class Node {
   public:
     int data;
@@ -17,6 +15,7 @@ class Node {
     }
 };
 
+// 1011 /1111 test cases passed
 
 class Solution {
   public:
